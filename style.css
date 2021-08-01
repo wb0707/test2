@@ -1,0 +1,371 @@
+*{
+    margin:0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    
+    font-family: "Poppins", sans-serif;
+    background-color: #0c1336e5;
+ 
+  color:#fff;
+    
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    height:4em;
+    background: #22243f8e;
+    align-items:center;
+    position: sticky;
+    z-index: 1;
+    top:0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    
+    color:rgb(250, 240, 242);
+    padding:1em;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+ span{
+    color:red; 
+
+}
+
+.nav-ul{
+    display:flex;
+    justify-content:space-around;
+    width:45%;
+    padding-right:3%;
+}
+.nav-ul li{
+    list-style:none;
+}
+
+.nav-ul li a{
+    text-decoration:none;
+    transition: 0.2s;
+    color:#fff;
+   
+}
+
+.nav-ul li a:hover{
+    
+    padding:7%;
+    border-radius:2px;
+    color:rgba(203, 231, 201, 0.863);
+}
+
+
+/*====BANNER===*/
+.banner{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height:34em;
+ 
+}
+
+.banner-left{
+    
+    margin-left:8%;
+    
+}
+
+.banner-left .icons  , p {
+
+    padding:3%;
+}
+
+.banner-left h1{
+  font-size: xx-large;
+}
+
+.banner-left p{
+
+}
+
+.banner-left .buttons{
+  padding:2%;
+}
+
+ button{
+    padding:4%;
+    margin-left:2%;
+    background-color: rgba(30, 29, 71, 0.514);
+    color: #fff;
+    border-radius: 14px;
+    border: 0px;
+    transition: 1s;
+
+}
+
+button:hover{
+   background-color: rgba(220, 20, 60, 0.671);
+}
+
+.banner-right{
+    margin-top:5%;
+    margin-right:4%;
+    
+}
+
+.banner-right img{
+  border-radius:  50%;
+  width: 17em;
+  height:18em;
+ 
+  
+}
+
+/*====OUR SERVICES====*/
+.services-title{
+  text-align: center;
+  margin-top: 5em;
+  padding-top:6%;
+}
+
+hr{
+    width:5em;
+    margin:0px auto;
+    color:red;
+    margin-top:1%;
+}
+.services , .pj{
+    display: grid;
+    grid-template-columns: repeat(2,22em);
+    grid-template-rows: repeat(2,22em);
+    row-gap: 8%;
+    column-gap: 8%;
+    justify-content: center;
+    position: relative;
+    padding-top: 4%;
+}
+
+
+.services .service, .project{
+    padding:5%;
+    background-color: rgba(30, 24, 51, 0.288);
+    transition: 1.1s;
+    border-radius:14px;
+    
+}
+.service:hover, .project:hover{
+    background-color: rgba(220, 20, 60, 0.529);
+}
+
+.service i{
+
+}
+
+.service h2{
+
+}
+
+.service p{
+
+}
+
+
+/*==== PROJECTS====*/
+.projects-title{
+  text-align: center;
+  margin-top: 13em;
+  padding-top:6%;
+}
+
+
+
+.projects{
+  
+  padding-bottom: 11em;
+}
+
+ .project{
+    padding:5%;
+    background-color: rgba(30, 24, 51, 0.288);
+}
+
+.project img{
+
+}
+
+.project-title{
+
+}
+
+.project p{
+
+}
+
+
+/*====TEAM MEMBERS====*/
+.tem-members{
+
+}
+
+
+/*=====REVIEW====*/
+.review{
+
+}
+
+.hamburger{
+    display: none;
+}
+
+
+/*====FOOTER====*/
+footer{
+    width:100%;
+    height:19em;
+    background-color: #1c20365e;
+    color: #0B2A41;
+    bottom:0;
+    position:relative;
+    overflow: hidden;
+}
+
+.mainbox{
+    display:flex;  
+
+}
+
+.box1{
+    width:50%;
+    
+}
+
+.footer-link{
+    display:flex;
+    flex-direction:column;
+    padding-bottom: 10%;
+    padding-top:10%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3em;
+
+}
+
+.footer-link li {
+    list-style: none;
+    padding-bottom: 1.7em;
+   
+}
+
+.footer-link li a{
+        text-decoration:none;
+        color:#fff;
+        transition: 0.5s;
+        
+}
+
+.footer-link li a:hover{
+        color:rgba(226, 96, 113, 0.897);
+        padding:1px;   
+}
+
+h4{
+    text-align:center;
+    color:white;
+    margin-top: 1%;
+    margin-bottom:0.2em ;
+}
+
+
+
+/*====MEDIA QUERY====*/
+
+@media (max-width: 765px){
+ 
+    .logo{
+        padding-left:1%;
+
+        
+    }
+     .nav-ul{
+         margin-right: 4%;
+     }
+    .nav-ul li{
+        
+        margin-right: 7%;
+
+    }
+
+    .nav-ul li a{
+        
+        font-size: 12px;
+    }
+     
+    .nav-ul li a:hover{
+        padding: 0px;
+        
+    }
+
+
+    /*====BANNER====*/
+    .banner{
+        height: 25em;
+    }
+    .banner-left{
+        padding: 4%;
+
+    }
+    .banner-left h1{
+        font-size: 23px;
+        padding-bottom: 4%;
+    }
+
+    .banner-left .icons,p{
+        padding-bottom: 6%;
+    }
+    .banner-right{
+        display: none;
+    }
+
+    /*=====SERVICES & PROJECTS===*/
+
+    .services-title{
+        
+        margin-top: 0.2em;
+    }
+
+    .services, .projects{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+    }
+
+    .service, .project{
+        
+        width:70%;
+        height:13em;
+        margin-bottom: 3em;
+    }
+
+    /*====FOOTER===*/
+    .footer-link{
+        margin-top: 2em;
+        padding-bottom: 2em;
+        font-size: 11px;
+        
+    }
+    
+    .footer-link li{
+        padding-bottom: 3em;
+    }
+
+    h4{
+        margin-top:1%;
+    }
+}
